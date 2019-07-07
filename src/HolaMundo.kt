@@ -126,4 +126,13 @@ fun main(args: Array<String>) {
     len = msg?.length ?: -1
 
     println("El tamaño de la cadena es $len")
+
+    //Listas con valores nulos
+    val listWithNull: List<Int?> = listOf(7,null,null,7)
+    println("Lista con Null: ${listWithNull}")
+
+    val listWithoutNull: List<Int?> = listWithNull.filterNotNull()
+    println("Lista sin Null: ${listWithoutNull}")
+
+
 }
