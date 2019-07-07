@@ -1,3 +1,31 @@
 fun main(args: Array<String>) {
     println("Hola Mundo")
+
+    //Operaciones con datos primitivos
+    println(1+1)
+    println(3-1)
+    println(2*2)
+    println(4/2)
+    println(7%2)
+
+    //TODO: En kotlin todo es un objeto. Es mejor usar esto:
+
+    val a = 4
+    val b = 2
+
+    println(a.plus(b))
+    println(a.minus(b))
+    println(a.times(b))
+    println(a.rem(b))
+
+    //operador de negación
+    var aux1 = true
+    var aux2 = aux1.not();
+    println("aux2: $aux2")
+
+    println("Resultado: ${aux1.and(false)}")
+
+    //a++
+    println("a ${a.inc()}")
+
 }
