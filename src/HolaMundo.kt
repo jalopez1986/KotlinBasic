@@ -112,10 +112,18 @@ fun main(args: Array<String>) {
     var msg: String?
     msg = null
 
-    println(msg?.length)
+    var len = msg?.length
 
+    println(len)
 
+    if (len == null) {
+        println("El valor de len es null")
+    }
 
+    println("Despues del length")
 
+    //operador elvis una mejor forma de llevar el control del flujo
+    len = msg?.length ?: -1
 
+    println("El tamaño de la cadena es $len")
 }
