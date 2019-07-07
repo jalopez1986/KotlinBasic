@@ -87,4 +87,26 @@ fun main(args: Array<String>) {
         else -> println("No está en alguno de los anteriores")
     }
 
+
+    //for
+    var daysOfWeek = listOf("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado")
+    for (day in daysOfWeek) {
+        println(day)
+    }
+
+    //acceder al indice
+    for ((index,day) in daysOfWeek.withIndex()) {
+        println("$index :$day")
+    }
+
+    //foreach lo mismo que for pero con una sintaxis mas simplificada
+    println("Foreach")
+    daysOfWeek.forEach{
+        println(it)
+    }
+
+    daysOfWeek.forEachIndexed { index, day ->
+        println("$index :$day")
+    }
+
 }
