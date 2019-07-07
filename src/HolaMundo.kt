@@ -59,5 +59,20 @@ fun main(args: Array<String>) {
     println(variableString + 6)  //concatena como string
 
 
+    //rangos
+    //numericos
+    val oneToHundred = 1..5
+    for (i in oneToHundred) {
+        println(i)
+    }
+
+    //Strings
+    for (i in 'A'..'D') {
+        println(i)
+    }
+
+
+
+
 
 }
