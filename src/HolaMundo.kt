@@ -109,4 +109,13 @@ fun main(args: Array<String>) {
         println("$index :$day")
     }
 
+    var msg: String?
+    msg = null
+
+    println(msg?.length)
+
+
+
+
+
 }
