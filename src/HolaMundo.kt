@@ -1,3 +1,7 @@
+const val NAME = "NAME CONSTANT DECLARATION"
+var n = "n" // mala practica tener var globales
+val n2 = "n" //se usan mas en funciones locales. No se pueden cambiar despues de asiganas
+
 fun main(args: Array<String>) {
     println("Hola Mundo")
 
