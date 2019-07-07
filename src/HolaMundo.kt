@@ -71,8 +71,20 @@ fun main(args: Array<String>) {
         println(i)
     }
 
+    //Operadores
+    //if igual que siempre
+    val numero = 10
+    if (numero.equals(2)) {
+        println("Son iguales")
+    } else {
+        println("No son iguales")
+    }
 
-
-
+    when(numero) {
+        10 -> println("Numero es igual a 10")
+        in 1..3 -> println("Sí esta entre 1 y 3")
+        in 1..5 -> println("Sí esta entre 1 y 5")
+        else -> println("No está en alguno de los anteriores")
+    }
 
 }
