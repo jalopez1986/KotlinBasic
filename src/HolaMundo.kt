@@ -49,4 +49,15 @@ fun main(args: Array<String>) {
 
     println(parrafo)
 
+    //Conversión de tipos de datos
+    var variableEntera: Int = 5
+    var variableLong: Long = variableEntera.toLong()
+
+    println(variableLong + 6.0)  //suma como long
+
+    var variableString = variableEntera.toString()
+    println(variableString + 6)  //concatena como string
+
+
+
 }
