@@ -165,6 +165,15 @@ fun main(args: Array<String>) {
     }
 
 
+    //expresiones vs valores
+    var x = 5
+    println("X es igual a 5? ${x==5}")
+
+    var mensaje = "El valor de x es $x"
+    x++
+    println("${mensaje.replace("es", "fue")}, x es igual a: $x")
+
+
 
 
 
