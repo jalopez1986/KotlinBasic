@@ -134,5 +134,39 @@ fun main(args: Array<String>) {
     val listWithoutNull: List<Int?> = listWithNull.filterNotNull()
     println("Lista sin Null: ${listWithoutNull}")
 
+    //array
+    val numbers = intArrayOf(3,4,10,5,9,15,25)
+    var sum = 0
+    numbers.forEach {
+        sum = sum.plus(it)
+    }
+
+    val average = sum.div(numbers.size)
+    println("El promedio es: $average")
+
+    //Convertir un array de tipo objeto a primitivo
+    var arrayObject = arrayOf(1,2,3)
+    var intPrimitive: IntArray = arrayObject.toIntArray()
+
+    //sumar elementos de un arreglo
+    val suma = arrayObject.sum()
+    println("La suma es: $suma")
+    
+    //agregar elemento al arreglo
+    arrayObject = arrayObject.plus(4)
+    for (o in arrayObject) {
+        println("Elemento: $o")
+    }
+
+    //colocar al reves un arreglo
+    arrayObject = arrayObject.reversedArray()
+    for (o in arrayObject) {
+        println("Elemento: $o")
+    }
+
+
+
+
+
 
 }
