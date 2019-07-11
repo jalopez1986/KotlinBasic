@@ -176,6 +176,29 @@ fun main(args: Array<String>) {
     nameAndCity("Jorge", "Cali")
     nameAndCity("Alberto")
 
+    //lambdas
+    val saludo = {println("Hola mundo")}
+    saludo()
+
+    //val suma = {instrucciones -> sentencias}
+    val plus = {a: Int, b: Int, c: Int -> a+b+c}
+    val result = plus(3,4,5)
+    println(result)
+
+    //llamar lambda de inmediato
+    println({a: Int, b: Int, c: Int -> a+b+c}(7,8,9))
+
+    val calculateNumber = { n: Int ->
+        when(n) {
+            in 1..3 -> println("Tu numero esta entre 1 y 3")
+            in 4..7 -> println("Tu numero esta entre 4 y 7")
+            in 8..10 -> println("Tu numero esta entre 8 y 10")
+        }
+    }
+
+    println(calculateNumber(6))
+
+
 }
 
 //funciones propias
