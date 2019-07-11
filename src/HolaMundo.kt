@@ -134,15 +134,6 @@ fun main(args: Array<String>) {
     val listWithoutNull: List<Int?> = listWithNull.filterNotNull()
     println("Lista sin Null: ${listWithoutNull}")
 
-    //array
-    val numbers = intArrayOf(3,4,10,5,9,15,25)
-    var sum = 0
-    numbers.forEach {
-        sum = sum.plus(it)
-    }
-
-    val average = sum.div(numbers.size)
-    println("El promedio es: $average")
 
     //Convertir un array de tipo objeto a primitivo
     var arrayObject = arrayOf(1,2,3)
@@ -173,9 +164,31 @@ fun main(args: Array<String>) {
     x++
     println("${mensaje.replace("es", "fue")}, x es igual a: $x")
 
+    //funciones
+    //llamar una funcion propia de kotlin
+    println("Raiz cuadrada de: ${Math.sqrt(4.0)}")
 
+    //llamar una funcion
+    //array
+    val numbers = intArrayOf(3,4,10,5,9,15,25)
+    println(averageNumbers(numbers))
 
+    nameAndCity("Jorge", "Cali")
+    nameAndCity("Alberto")
 
+}
 
+//funciones propias
+fun averageNumbers(numbers: IntArray): Int {
+    var sum = 0
+    numbers.forEach {
+        sum = sum.plus(it)
+    }
 
+    return sum.div(numbers.size)
+}
+
+//parametro por defecto
+fun nameAndCity(name: String, city:String = "Pereira") {
+    println("Hola ${name} tu ciudad de origen es: ${city}")
 }
