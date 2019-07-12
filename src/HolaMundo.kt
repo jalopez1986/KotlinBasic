@@ -1,3 +1,5 @@
+import model.Camera
+
 const val NAME = "NAME CONSTANT DECLARATION"
 var n = "n" // mala practica tener var globales
 val n2 = "n" //se usan mas en funciones locales. No se pueden cambiar despues de asiganas
@@ -197,6 +199,16 @@ fun main(args: Array<String>) {
     }
 
     println(calculateNumber(6))
+
+    //clases
+    val camera = Camera()
+    camera.turnOn()
+    println(camera.getCameraStatus())
+
+    //getter y setter provistor por el programador
+    println("Resolution: ${camera.getResolution()}")
+    camera.setResolution(1080)
+    println("Resolution: ${camera.getResolution()}")
 
 
 }
