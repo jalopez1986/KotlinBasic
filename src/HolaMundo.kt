@@ -1,4 +1,5 @@
 import model.Camera
+import model.Shoe
 
 const val NAME = "NAME CONSTANT DECLARATION"
 var n = "n" // mala practica tener var globales
@@ -209,6 +210,18 @@ fun main(args: Array<String>) {
     println("Resolution: ${camera.getResolution()}")
     camera.setResolution(1080)
     println("Resolution: ${camera.getResolution()}")
+
+    //show example
+    var shoe = Shoe()
+    shoe.size = 33
+    println(shoe.size) //imprime 34
+    shoe.size = 37
+    println(shoe.size) // imprime 37
+
+    shoe.model = "Charol"
+    println(shoe.model)
+    shoe.model = "Tenis"
+    println(shoe.model)
 
 
 }
