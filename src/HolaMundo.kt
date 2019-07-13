@@ -1,4 +1,5 @@
 import model.Camera
+import model.Movie
 import model.Shoe
 
 const val NAME = "NAME CONSTANT DECLARATION"
@@ -222,6 +223,20 @@ fun main(args: Array<String>) {
     println(shoe.model)
     shoe.model = "Tenis"
     println(shoe.model)
+    println(shoe.toString())  //Este imprime el objeto porque no tiene implementado el tString
+
+
+    //data class
+    val movie = Movie("coco", "pixar", 120)
+    println("Movie")
+    println(movie.tittle)
+    println(movie.creator)
+    println("${movie.duration} min.")
+    println(movie.toString())  //ya es un toString que tiene por defecto el data clas
+
+
+
+
 
 
 }
