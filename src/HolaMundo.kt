@@ -213,7 +213,7 @@ fun main(args: Array<String>) {
     println("Resolution: ${camera.getResolution()}")
 
     //show example
-    var shoe = Shoe()
+    var shoe = Shoe("Shoe", "Blue shoe",12345, "praga")
     shoe.size = 33
     println(shoe.size) //imprime 34
     shoe.size = 37
@@ -223,7 +223,8 @@ fun main(args: Array<String>) {
     println(shoe.model)
     shoe.model = "Tenis"
     println(shoe.model)
-    println(shoe.toString())  //Este imprime el objeto porque no tiene implementado el tString
+    println(shoe.toString())
+
 
 
     //data class
