@@ -1,6 +1,6 @@
 package model
 
-class Shoe(name: String, description: String, sku: Int, var brand: String):Product(name, description, sku) {
+class Shoe(name: String, description: String, sku: Int, var brand: String):Product(name, description, sku), ICrudActions {
 
     init {
         println("Metodo que se ejecuta al instanciarse un objeto")
@@ -44,9 +44,4 @@ class Shoe(name: String, description: String, sku: Int, var brand: String):Produ
     override fun delete(): String {
         return "Delete Shoe"
     }
-
-
-
-
-
 }
